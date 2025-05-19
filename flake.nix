@@ -6,15 +6,15 @@
     {
       templates = {
         shell = {
-          path = ./shell;
+          path = ./shell/default;
           description = "Default shell template";
         };
-        "node-shell" = {
-          path = ./node-shell;
+        "nodejs-shell" = {
+          path = ./shell/nodejs;
           description = "A Node.js development environment";
         };
-        "node16-shell" = {
-          path = ./node16-shell;
+        "nodejs16-shell" = {
+          path = ./shell/nodejs16;
           description = "A Node.js 16 development environment";
         };
       };
