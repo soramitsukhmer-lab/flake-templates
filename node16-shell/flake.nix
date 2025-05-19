@@ -1,7 +1,7 @@
 {
   inputs = {
     systems.url = "github:nix-systems/default";
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/23.05";
   };
 
   outputs =
