@@ -26,6 +26,6 @@
           description = "A Node.js 22 development environment with Yarn";
         };
       };
-      defaultTemplate = self.templates.shell;
+      templates.default = self.templates.shell;
     };
 }
