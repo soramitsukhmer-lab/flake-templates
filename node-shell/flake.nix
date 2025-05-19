@@ -21,8 +21,14 @@
               overlays = [
                 (self: super: {
                   yarn = super.yarn.override {
-                    nodejs = super.nodejs_18;
+                    nodejs = super.nodejs_22;
                   };
+                  # yarn-berry = super.yarn.override {
+                  #   nodejs = super.nodejs_22;
+                  # };
+                  # pnpm = super.pnpm.override {
+                  #   nodejs = super.nodejs_22;
+                  # };
                 })
               ];
             };
@@ -33,10 +39,15 @@
       devShells = forEachSystem (
         { pkgs }:
         {
-          default = pkgs.mkShell {
+          default = pkgs.mkShellNoCC {
             packages = with pkgs; [
-              pkgs.nodejs_18
+              pkgs.nodejs_22
               pkgs.yarn
+              # pkgs.yarn-berry
+              # pkgs.pnpm
+              # pkgs.pnpm_8
+              # pkgs.pnpm_10
+
             ];
             shellHook = ''
               echo "Welcome to your Node.js development environment!"
