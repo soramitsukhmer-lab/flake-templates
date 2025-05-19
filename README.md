@@ -10,6 +10,12 @@ A collection of project templates for Nix Flake.
 nix flake init -t github:soramitsukhmer-lab/flake-templates
 ```
 
+Showing the available templates:
+
+```bash
+nix flake show github:soramitsukhmer-lab/flake-templates
+```
+
 Update the template to the latest version:
 
 ```bash
