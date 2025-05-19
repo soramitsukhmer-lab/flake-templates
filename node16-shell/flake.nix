@@ -42,7 +42,6 @@
               export NODE_OPTIONS="--openssl-legacy-provider"
               echo "Welcome to your Node.js development environment!"
               echo "Node.js $(node -v)"
-              echo "Yarn v$(yarn -v)"
             '';
           };
         }
