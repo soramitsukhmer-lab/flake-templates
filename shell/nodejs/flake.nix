@@ -40,7 +40,7 @@
         { pkgs }:
         {
           default = pkgs.mkShellNoCC {
-            packages = with pkgs; [
+            packages = [
               pkgs.nodejs_22
               pkgs.yarn
               # pkgs.yarn-berry

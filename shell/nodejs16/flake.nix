@@ -34,7 +34,7 @@
         { pkgs }:
         {
           default = pkgs.mkShellNoCC {
-            packages = with pkgs; [
+            packages = [
               pkgs.nodejs-16_x
               pkgs.yarn
             ];
