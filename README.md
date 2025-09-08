@@ -35,3 +35,6 @@ Update the template to the latest version:
 ```bash
 nix flake update --flake github:soramitsukhmer-lab/flake-templates
 ```
+
+## References
+- See also [soramitsukhmer-lab/nix.conf](https://github.com/soramitsukhmer-lab/nix.conf) for Nix general configurations.
