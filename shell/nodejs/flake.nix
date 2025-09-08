@@ -1,7 +1,7 @@
 {
   inputs = {
     systems.url = "github:nix-systems/default";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
   };
 
   outputs =
@@ -21,7 +21,7 @@
               overlays = [
                 (self: super: {
                   yarn = super.yarn.override {
-                    nodejs = super.nodejs_22;
+                    nodejs = super.nodejs_24;
                   };
                   # yarn-berry = super.yarn.override {
                   #   nodejs = super.nodejs_22;
