@@ -6,14 +6,19 @@ A collection of project templates for Nix Flake.
 
 > WIP
 
-```bash
-nix flake init -t github:soramitsukhmer-lab/flake-templates
-```
-
 Showing the available templates:
 
 ```bash
 nix flake show github:soramitsukhmer-lab/flake-templates
+```
+
+Initialize flake:
+```bash
+# Init using `default` template:
+nix flake init -t github:soramitsukhmer-lab/flake-templates
+
+# Init using available templates:
+nix flake init -t github:soramitsukhmer-lab/flake-templates#<template>
 ```
 
 Update the template to the latest version:
